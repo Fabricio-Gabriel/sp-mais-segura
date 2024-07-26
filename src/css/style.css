@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Jost", sans-serif;
+}
+
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+}
+
+
+body {
+    background-color: #1c1c1c;
+}
+
+
+header {
+    width: 100vw;
+    height: 90px;
+    padding: 0px 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    /* padding: 0px 20px; */
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+
+nav {
+    width: 100%;
+    padding: 0px 15px;
+    /* background-color: red; */
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (min-width: 570px){
+    
+    header {
+        width: 100vw;
+        height: 90px;
+        padding: 0px 30px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        /* padding: 0px 20px; */
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+
+    nav {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+}
+
+
+.logo {
+    height: 70px;
+}
+
+
+.menu {
+    height: 30px;
+    cursor: pointer;
+    display: block;
+}
+
+
+@media screen and (min-width: 570px) {
+    .menu {
+        display: none;
+    }
+}
+
+
+ul {
+    display: none;
+
+}
+
+
+@media screen and (min-width: 570px){
+    
+    ul {
+        display: flex;
+        gap: 35px;
+    }
+
+}
+
+
+li {
+    list-style: none;
+
+}
+
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+}
+
+@media screen and (min-width: 700px) {
+    
+    a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.3rem;
+    }
+
+    ul {
+        gap: 50px;
+    }
+
+}
