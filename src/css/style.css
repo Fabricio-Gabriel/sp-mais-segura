@@ -5,13 +5,15 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Jost", sans-serif;
+    overflow-x: hidden;
 }
 
 
 html, body {
     width: 100vw;
     height: 100vh;
-}
+    
+}   
 
 
 body {
@@ -41,7 +43,7 @@ nav {
     align-items: center;
 }
 
-@media screen and (min-width: 570px){
+@media screen and (min-width: 645px){
     
     header {
         width: 100vw;
@@ -56,10 +58,11 @@ nav {
 
     nav {
         width: 100%;
-        height: auto;
+        height: 100%;
         display: flex;
         justify-content: space-around;
         align-items: center;
+        /* background-color: purple; */
     }
 
 }
@@ -74,10 +77,28 @@ nav {
     height: 30px;
     cursor: pointer;
     display: block;
+    margin-right: 15px;
 }
 
+.cadastro {
+    font-size: 1rem;
+    border: 3px solid #fff;
+    padding: 7px;
+    border-radius: 25px;
+    transition: all .3s ease 0s;
+}
 
-@media screen and (min-width: 570px) {
+.cadastro:hover{
+    background-color: #fff;
+    color: #1c1c1c;
+    cursor: pointer;
+}
+
+.cadastro:hover > a {
+    color: #1c1c1c;
+}
+
+@media screen and (min-width: 645px) {
     .menu {
         display: none;
     }
@@ -90,10 +111,11 @@ ul {
 }
 
 
-@media screen and (min-width: 570px){
+@media screen and (min-width: 645px){
     
     ul {
         display: flex;
+        align-items: center;
         gap: 35px;
     }
 
@@ -121,7 +143,28 @@ a {
     }
 
     ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         gap: 50px;
+        /* background-color: aqua; */
     }
 
+}
+
+main {
+    width: 100vw;
+
+}
+
+.maps {
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.maps iframe {
+    width: 100%;
 }

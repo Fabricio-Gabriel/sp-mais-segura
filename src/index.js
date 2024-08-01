@@ -2,6 +2,7 @@ import 'regenerator-runtime/runtime';
 import 'core-js/stable';
 
 import './css/style.css';
+import './css/cadastro.css';
 
 class Carro {
     constructor(modelo, cor) {
