@@ -15,12 +15,6 @@ html, body {
 }   
 
 
-.body-form {
-    background-image: url('../../public/imgs/teste-bg2.jpg');
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
 .main-form {
     width: 100vw;

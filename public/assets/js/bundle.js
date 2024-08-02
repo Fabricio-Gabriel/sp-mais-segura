@@ -16,16 +16,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/getUrl.js */ "./node_modules/css-loader/dist/runtime/getUrl.js");
-/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__);
 // Imports
 
 
-
-var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ../../public/imgs/teste-bg2.jpg */ "./public/imgs/teste-bg2.jpg"), __webpack_require__.b);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 ___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap);"]);
-var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, `* {
     margin: 0;
@@ -42,11 +37,8 @@ html, body {
 }   
 
 
-.body-form {
-    background-image: url(${___CSS_LOADER_URL_REPLACEMENT_0___});
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-size: cover;
+body {
+    
 }
 
 .main-form {
@@ -134,7 +126,7 @@ html, body {
     color: #fff;
     margin-top: 25px;
 }
-`, "",{"version":3,"sources":["webpack://./src/css/forms.css"],"names":[],"mappings":"AAEA;IACI,SAAS;IACT,UAAU;IACV,sBAAsB;IACtB,+BAA+B;IAC/B,kBAAkB;AACtB;;;AAGA;IACI,YAAY;IACZ,aAAa;AACjB;;;AAGA;IACI,yDAAwD;IACxD,+BAA+B;IAC/B,4BAA4B;IAC5B,sBAAsB;AAC1B;;AAEA;IACI,YAAY;IACZ,YAAY;IACZ,aAAa;IACb,uBAAuB;AAC3B;;AAEA;IACI,WAAW;IACX,kBAAkB;AACtB;;AAEA;IACI,yBAAyB;IACzB,gBAAgB;IAChB,mBAAmB;IACnB,aAAa;IACb,WAAW;IACX,gBAAgB;IAChB,mBAAmB;IACnB,sBAAsB;IACtB,YAAY;IACZ,kBAAkB;AACtB;;AAEA;IACI,WAAW;IACX,gBAAgB;IAChB,yBAAyB;IACzB,sBAAsB;IACtB,kBAAkB;IAClB,WAAW;IACX,YAAY;AAChB;;AAEA;IACI,WAAW;AACf;;AAEA;IACI,aAAa;AACjB;;AAEA;IACI,WAAW;IACX,gBAAgB;IAChB,yBAAyB;IACzB,sBAAsB;IACtB,kBAAkB;IAClB,WAAW;IACX,YAAY;AAChB;;AAEA;IACI,WAAW;AACf;;AAEA;IACI,aAAa;AACjB;;AAEA;IACI,WAAW;IACX,gBAAgB;IAChB,YAAY;IACZ,yBAAyB;IACzB,yBAAyB;IACzB,mBAAmB;IACnB,cAAc;IACd,iBAAiB;IACjB,gBAAgB;IAChB,kCAAkC;AACtC;;AAEA;IACI,eAAe;IACf,yBAAyB;IACzB,WAAW;IACX,sBAAsB;AAC1B;;AAEA;IACI,WAAW;IACX,gBAAgB;AACpB","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');\r\n\r\n* {\r\n    margin: 0;\r\n    padding: 0;\r\n    box-sizing: border-box;\r\n    font-family: \"Jost\", sans-serif;\r\n    overflow-x: hidden;\r\n}\r\n\r\n\r\nhtml, body {\r\n    width: 100vw;\r\n    height: 100vh;\r\n}   \r\n\r\n\r\n.body-form {\r\n    background-image: url('../../public/imgs/teste-bg2.jpg');\r\n    background-position: top center;\r\n    background-repeat: no-repeat;\r\n    background-size: cover;\r\n}\r\n\r\n.main-form {\r\n    width: 100vw;\r\n    height: auto;\r\n    display: flex;\r\n    justify-content: center;\r\n}\r\n\r\n.main-form form > h1 {\r\n    color: #fff;\r\n    text-align: center;\r\n}\r\n\r\n.main-form form {\r\n    background-color: #1c1919;\r\n    margin-top: 40px;\r\n    margin-bottom: 35px;\r\n    padding: 15px;\r\n    width: 100%;\r\n    max-width: 550px;\r\n    border-radius: 20px;\r\n    border: solid 2px #fff;\r\n    height: auto;\r\n    overflow-y: hidden;\r\n}\r\n\r\n.main-form form input[type='text'] {\r\n    width: 100%;\r\n    margin-top: 20px;\r\n    background-color: #1c1919;\r\n    border: 1px solid #fff;\r\n    border-radius: 8px;\r\n    color: #fff;\r\n    padding: 4px;\r\n}\r\n\r\n.main-form form input[type='text']::placeholder {\r\n    color: #fff;\r\n}\r\n\r\n.main-form form input[type='text']:focus {\r\n    outline: none;\r\n}\r\n\r\n.main-form form input[type='email'] {\r\n    width: 100%;\r\n    margin-top: 20px;\r\n    background-color: #1c1919;\r\n    border: 1px solid #fff;\r\n    border-radius: 8px;\r\n    color: #fff;\r\n    padding: 4px;\r\n}\r\n\r\n.main-form form input[type='email']::placeholder {\r\n    color: #fff;\r\n}\r\n\r\n.main-form form input[type='email']:focus {\r\n    outline: none;\r\n}\r\n\r\n.btn-form {\r\n    width: 100%;\r\n    margin-top: 30px;\r\n    height: 40px;\r\n    background-color: #ffffff;\r\n    border: 2px solid #ffffff;\r\n    border-radius: 10px;\r\n    color: #1c1919;\r\n    font-size: 1.3rem;\r\n    font-weight: 500;\r\n    transition: all .3s ease-in-out 0s;\r\n}\r\n\r\n.btn-form:hover {\r\n    cursor: pointer;\r\n    background-color: #1c1919;\r\n    color: #fff;\r\n    border: 2px solid #fff;\r\n}\r\n\r\n.arquivo {\r\n    color: #fff;\r\n    margin-top: 25px;\r\n}\r\n"],"sourceRoot":""}]);
+`, "",{"version":3,"sources":["webpack://./src/css/forms.css"],"names":[],"mappings":"AAEA;IACI,SAAS;IACT,UAAU;IACV,sBAAsB;IACtB,+BAA+B;IAC/B,kBAAkB;AACtB;;;AAGA;IACI,YAAY;IACZ,aAAa;AACjB;;;AAGA;;AAEA;;AAEA;IACI,YAAY;IACZ,YAAY;IACZ,aAAa;IACb,uBAAuB;AAC3B;;AAEA;IACI,WAAW;IACX,kBAAkB;AACtB;;AAEA;IACI,yBAAyB;IACzB,gBAAgB;IAChB,mBAAmB;IACnB,aAAa;IACb,WAAW;IACX,gBAAgB;IAChB,mBAAmB;IACnB,sBAAsB;IACtB,YAAY;IACZ,kBAAkB;AACtB;;AAEA;IACI,WAAW;IACX,gBAAgB;IAChB,yBAAyB;IACzB,sBAAsB;IACtB,kBAAkB;IAClB,WAAW;IACX,YAAY;AAChB;;AAEA;IACI,WAAW;AACf;;AAEA;IACI,aAAa;AACjB;;AAEA;IACI,WAAW;IACX,gBAAgB;IAChB,yBAAyB;IACzB,sBAAsB;IACtB,kBAAkB;IAClB,WAAW;IACX,YAAY;AAChB;;AAEA;IACI,WAAW;AACf;;AAEA;IACI,aAAa;AACjB;;AAEA;IACI,WAAW;IACX,gBAAgB;IAChB,YAAY;IACZ,yBAAyB;IACzB,yBAAyB;IACzB,mBAAmB;IACnB,cAAc;IACd,iBAAiB;IACjB,gBAAgB;IAChB,kCAAkC;AACtC;;AAEA;IACI,eAAe;IACf,yBAAyB;IACzB,WAAW;IACX,sBAAsB;AAC1B;;AAEA;IACI,WAAW;IACX,gBAAgB;AACpB","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');\r\n\r\n* {\r\n    margin: 0;\r\n    padding: 0;\r\n    box-sizing: border-box;\r\n    font-family: \"Jost\", sans-serif;\r\n    overflow-x: hidden;\r\n}\r\n\r\n\r\nhtml, body {\r\n    width: 100vw;\r\n    height: 100vh;\r\n}   \r\n\r\n\r\nbody {\r\n    \r\n}\r\n\r\n.main-form {\r\n    width: 100vw;\r\n    height: auto;\r\n    display: flex;\r\n    justify-content: center;\r\n}\r\n\r\n.main-form form > h1 {\r\n    color: #fff;\r\n    text-align: center;\r\n}\r\n\r\n.main-form form {\r\n    background-color: #1c1919;\r\n    margin-top: 40px;\r\n    margin-bottom: 35px;\r\n    padding: 15px;\r\n    width: 100%;\r\n    max-width: 550px;\r\n    border-radius: 20px;\r\n    border: solid 2px #fff;\r\n    height: auto;\r\n    overflow-y: hidden;\r\n}\r\n\r\n.main-form form input[type='text'] {\r\n    width: 100%;\r\n    margin-top: 20px;\r\n    background-color: #1c1919;\r\n    border: 1px solid #fff;\r\n    border-radius: 8px;\r\n    color: #fff;\r\n    padding: 4px;\r\n}\r\n\r\n.main-form form input[type='text']::placeholder {\r\n    color: #fff;\r\n}\r\n\r\n.main-form form input[type='text']:focus {\r\n    outline: none;\r\n}\r\n\r\n.main-form form input[type='email'] {\r\n    width: 100%;\r\n    margin-top: 20px;\r\n    background-color: #1c1919;\r\n    border: 1px solid #fff;\r\n    border-radius: 8px;\r\n    color: #fff;\r\n    padding: 4px;\r\n}\r\n\r\n.main-form form input[type='email']::placeholder {\r\n    color: #fff;\r\n}\r\n\r\n.main-form form input[type='email']:focus {\r\n    outline: none;\r\n}\r\n\r\n.btn-form {\r\n    width: 100%;\r\n    margin-top: 30px;\r\n    height: 40px;\r\n    background-color: #ffffff;\r\n    border: 2px solid #ffffff;\r\n    border-radius: 10px;\r\n    color: #1c1919;\r\n    font-size: 1.3rem;\r\n    font-weight: 500;\r\n    transition: all .3s ease-in-out 0s;\r\n}\r\n\r\n.btn-form:hover {\r\n    cursor: pointer;\r\n    background-color: #1c1919;\r\n    color: #fff;\r\n    border: 2px solid #fff;\r\n}\r\n\r\n.arquivo {\r\n    color: #fff;\r\n    margin-top: 25px;\r\n}\r\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -427,42 +419,6 @@ module.exports = function (cssWithMappingToString) {
     }
   };
   return list;
-};
-
-/***/ }),
-
-/***/ "./node_modules/css-loader/dist/runtime/getUrl.js":
-/*!********************************************************!*\
-  !*** ./node_modules/css-loader/dist/runtime/getUrl.js ***!
-  \********************************************************/
-/***/ ((module) => {
-
-"use strict";
-
-
-module.exports = function (url, options) {
-  if (!options) {
-    options = {};
-  }
-  if (!url) {
-    return url;
-  }
-  url = String(url.__esModule ? url.default : url);
-
-  // If url is already wrapped in quotes, remove them
-  if (/^['"].*['"]$/.test(url)) {
-    url = url.slice(1, -1);
-  }
-  if (options.hash) {
-    url += options.hash;
-  }
-
-  // Should url be wrapped?
-  // See https://drafts.csswg.org/css-values-3/#urls
-  if (/["'() \t\n]|(%20)/.test(url) || options.needQuotes) {
-    return "\"".concat(url.replace(/"/g, '\\"').replace(/\n/g, "\\n"), "\"");
-  }
-  return url;
 };
 
 /***/ }),
@@ -1640,17 +1596,6 @@ function styleTagTransform(css, styleElement) {
   }
 }
 module.exports = styleTagTransform;
-
-/***/ }),
-
-/***/ "./public/imgs/teste-bg2.jpg":
-/*!***********************************!*\
-  !*** ./public/imgs/teste-bg2.jpg ***!
-  \***********************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-module.exports = __webpack_require__.p + "4429f72a95442bae0cdf.jpg";
 
 /***/ }),
 
@@ -23653,9 +23598,6 @@ module.exports = __webpack_require__(/*! ../internals/path */ "./node_modules/co
 /******/ 		return module.exports;
 /******/ 	}
 /******/ 	
-/******/ 	// expose the modules object (__webpack_modules__)
-/******/ 	__webpack_require__.m = __webpack_modules__;
-/******/ 	
 /************************************************************************/
 /******/ 	/* webpack/runtime/compat get default export */
 /******/ 	(() => {
@@ -23707,55 +23649,6 @@ module.exports = __webpack_require__(/*! ../internals/path */ "./node_modules/co
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/publicPath */
-/******/ 	(() => {
-/******/ 		var scriptUrl;
-/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
-/******/ 		var document = __webpack_require__.g.document;
-/******/ 		if (!scriptUrl && document) {
-/******/ 			if (document.currentScript)
-/******/ 				scriptUrl = document.currentScript.src;
-/******/ 			if (!scriptUrl) {
-/******/ 				var scripts = document.getElementsByTagName("script");
-/******/ 				if(scripts.length) {
-/******/ 					var i = scripts.length - 1;
-/******/ 					while (i > -1 && (!scriptUrl || !/^http(s?):/.test(scriptUrl))) scriptUrl = scripts[i--].src;
-/******/ 				}
-/******/ 			}
-/******/ 		}
-/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
-/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
-/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
-/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
-/******/ 		__webpack_require__.p = scriptUrl;
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/jsonp chunk loading */
-/******/ 	(() => {
-/******/ 		__webpack_require__.b = document.baseURI || self.location.href;
-/******/ 		
-/******/ 		// object to store loaded and loading chunks
-/******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
-/******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
-/******/ 		var installedChunks = {
-/******/ 			"main": 0
-/******/ 		};
-/******/ 		
-/******/ 		// no chunk on demand loading
-/******/ 		
-/******/ 		// no prefetching
-/******/ 		
-/******/ 		// no preloaded
-/******/ 		
-/******/ 		// no HMR
-/******/ 		
-/******/ 		// no HMR manifest
-/******/ 		
-/******/ 		// no on chunks loaded
-/******/ 		
-/******/ 		// no jsonp function
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/nonce */
