@@ -35,6 +35,10 @@ ___CSS_LOADER_EXPORT___.push([module.id, `* {
     overflow-x: hidden;
 }
 
+.erro-text {
+    color: #fff;
+}
+
 
 html, body {
     width: 100vw;
@@ -149,7 +153,7 @@ textarea::placeholder {
     color: #fff;
     margin-top: 25px;
 }
-`, "",{"version":3,"sources":["webpack://./src/css/forms.css"],"names":[],"mappings":"AAEA;IACI,SAAS;IACT,UAAU;IACV,sBAAsB;IACtB,+BAA+B;IAC/B,kBAAkB;AACtB;;;AAGA;IACI,YAAY;IACZ,aAAa;AACjB;;AAEA;IACI,yDAAwD;IACxD,wBAAwB;IACxB,4BAA4B;IAC5B,sBAAsB;AAC1B;;AAEA;IACI,YAAY;IACZ,YAAY;IACZ,aAAa;IACb,uBAAuB;AAC3B;;AAEA;IACI,WAAW;IACX,kBAAkB;AACtB;;AAEA;IACI,yBAAyB;IACzB,gBAAgB;IAChB,mBAAmB;IACnB,aAAa;IACb,WAAW;IACX,gBAAgB;IAChB,mBAAmB;IACnB,sBAAsB;IACtB,YAAY;IACZ,kBAAkB;AACtB;;AAEA;IACI,WAAW;IACX,gBAAgB;IAChB,yBAAyB;IACzB,sBAAsB;IACtB,kBAAkB;IAClB,WAAW;IACX,YAAY;AAChB;;AAEA;IACI,WAAW;AACf;;AAEA;IACI,aAAa;AACjB;;AAEA;IACI,WAAW;IACX,gBAAgB;IAChB,yBAAyB;IACzB,sBAAsB;IACtB,kBAAkB;IAClB,WAAW;IACX,YAAY;AAChB;;AAEA;IACI,WAAW;AACf;;AAEA;IACI,aAAa;AACjB;;AAEA;IACI,WAAW;IACX,gBAAgB;IAChB,YAAY;IACZ,yBAAyB;IACzB,yBAAyB;IACzB,mBAAmB;IACnB,cAAc;IACd,iBAAiB;IACjB,gBAAgB;IAChB,kCAAkC;AACtC;;AAEA;IACI,eAAe;IACf,yBAAyB;IACzB,WAAW;IACX,sBAAsB;AAC1B;;AAEA;IACI,WAAW;IACX,yBAAyB;IACzB,sBAAsB;IACtB,gBAAgB;IAChB,iBAAiB;IACjB,gBAAgB;IAChB,kBAAkB;IAClB,YAAY;IACZ;AACJ;;AAEA;IACI;AACJ;;AAEA;IACI,WAAW;IACX,gBAAgB;AACpB","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');\r\n\r\n* {\r\n    margin: 0;\r\n    padding: 0;\r\n    box-sizing: border-box;\r\n    font-family: \"Jost\", sans-serif;\r\n    overflow-x: hidden;\r\n}\r\n\r\n\r\nhtml, body {\r\n    width: 100vw;\r\n    height: 100vh;\r\n}   \r\n\r\n.body-form {\r\n    background-image: url('../../public/imgs/teste-bg2.jpg');\r\n    background-position: top;\r\n    background-repeat: no-repeat;\r\n    background-size: cover;\r\n}\r\n\r\n.main-form {\r\n    width: 100vw;\r\n    height: auto;\r\n    display: flex;\r\n    justify-content: center;\r\n}\r\n\r\n.main-form form > h1 {\r\n    color: #fff;\r\n    text-align: center;\r\n}\r\n\r\n.main-form form {\r\n    background-color: #1c1919;\r\n    margin-top: 40px;\r\n    margin-bottom: 35px;\r\n    padding: 15px;\r\n    width: 100%;\r\n    max-width: 650px;\r\n    border-radius: 20px;\r\n    border: solid 2px #fff;\r\n    height: auto;\r\n    overflow-y: hidden;\r\n}\r\n\r\n.main-form form input[type='text'] {\r\n    width: 100%;\r\n    margin-top: 20px;\r\n    background-color: #1c1919;\r\n    border: 1px solid #fff;\r\n    border-radius: 8px;\r\n    color: #fff;\r\n    padding: 4px;\r\n}\r\n\r\n.main-form form input[type='text']::placeholder {\r\n    color: #fff;\r\n}\r\n\r\n.main-form form input[type='text']:focus {\r\n    outline: none;\r\n}\r\n\r\n.main-form form input[type='email'] {\r\n    width: 100%;\r\n    margin-top: 20px;\r\n    background-color: #1c1919;\r\n    border: 1px solid #fff;\r\n    border-radius: 8px;\r\n    color: #fff;\r\n    padding: 4px;\r\n}\r\n\r\n.main-form form input[type='email']::placeholder {\r\n    color: #fff;\r\n}\r\n\r\n.main-form form input[type='email']:focus {\r\n    outline: none;\r\n}\r\n\r\n.btn-form {\r\n    width: 100%;\r\n    margin-top: 30px;\r\n    height: 40px;\r\n    background-color: #ffffff;\r\n    border: 2px solid #ffffff;\r\n    border-radius: 10px;\r\n    color: #1c1919;\r\n    font-size: 1.3rem;\r\n    font-weight: 500;\r\n    transition: all .3s ease-in-out 0s;\r\n}\r\n\r\n.btn-form:hover {\r\n    cursor: pointer;\r\n    background-color: #1c1919;\r\n    color: #fff;\r\n    border: 2px solid #fff;\r\n}\r\n\r\ntextarea {\r\n    width: 100%;\r\n    background-color: #1c1919;\r\n    border: 1px solid #fff;\r\n    resize: vertical;\r\n    min-height: 150px;\r\n    margin-top: 25px;\r\n    border-radius: 8px;\r\n    padding: 4px;\r\n    color:#fff\r\n}\r\n\r\ntextarea::placeholder {\r\n    color: #fff\r\n}\r\n\r\n.arquivo {\r\n    color: #fff;\r\n    margin-top: 25px;\r\n}\r\n"],"sourceRoot":""}]);
+`, "",{"version":3,"sources":["webpack://./src/css/forms.css"],"names":[],"mappings":"AAEA;IACI,SAAS;IACT,UAAU;IACV,sBAAsB;IACtB,+BAA+B;IAC/B,kBAAkB;AACtB;;AAEA;IACI,WAAW;AACf;;;AAGA;IACI,YAAY;IACZ,aAAa;AACjB;;AAEA;IACI,yDAAwD;IACxD,wBAAwB;IACxB,4BAA4B;IAC5B,sBAAsB;AAC1B;;AAEA;IACI,YAAY;IACZ,YAAY;IACZ,aAAa;IACb,uBAAuB;AAC3B;;AAEA;IACI,WAAW;IACX,kBAAkB;AACtB;;AAEA;IACI,yBAAyB;IACzB,gBAAgB;IAChB,mBAAmB;IACnB,aAAa;IACb,WAAW;IACX,gBAAgB;IAChB,mBAAmB;IACnB,sBAAsB;IACtB,YAAY;IACZ,kBAAkB;AACtB;;AAEA;IACI,WAAW;IACX,gBAAgB;IAChB,yBAAyB;IACzB,sBAAsB;IACtB,kBAAkB;IAClB,WAAW;IACX,YAAY;AAChB;;AAEA;IACI,WAAW;AACf;;AAEA;IACI,aAAa;AACjB;;AAEA;IACI,WAAW;IACX,gBAAgB;IAChB,yBAAyB;IACzB,sBAAsB;IACtB,kBAAkB;IAClB,WAAW;IACX,YAAY;AAChB;;AAEA;IACI,WAAW;AACf;;AAEA;IACI,aAAa;AACjB;;AAEA;IACI,WAAW;IACX,gBAAgB;IAChB,YAAY;IACZ,yBAAyB;IACzB,yBAAyB;IACzB,mBAAmB;IACnB,cAAc;IACd,iBAAiB;IACjB,gBAAgB;IAChB,kCAAkC;AACtC;;AAEA;IACI,eAAe;IACf,yBAAyB;IACzB,WAAW;IACX,sBAAsB;AAC1B;;AAEA;IACI,WAAW;IACX,yBAAyB;IACzB,sBAAsB;IACtB,gBAAgB;IAChB,iBAAiB;IACjB,gBAAgB;IAChB,kBAAkB;IAClB,YAAY;IACZ;AACJ;;AAEA;IACI;AACJ;;AAEA;IACI,WAAW;IACX,gBAAgB;AACpB","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');\r\n\r\n* {\r\n    margin: 0;\r\n    padding: 0;\r\n    box-sizing: border-box;\r\n    font-family: \"Jost\", sans-serif;\r\n    overflow-x: hidden;\r\n}\r\n\r\n.erro-text {\r\n    color: #fff;\r\n}\r\n\r\n\r\nhtml, body {\r\n    width: 100vw;\r\n    height: 100vh;\r\n}   \r\n\r\n.body-form {\r\n    background-image: url('../../public/imgs/teste-bg2.jpg');\r\n    background-position: top;\r\n    background-repeat: no-repeat;\r\n    background-size: cover;\r\n}\r\n\r\n.main-form {\r\n    width: 100vw;\r\n    height: auto;\r\n    display: flex;\r\n    justify-content: center;\r\n}\r\n\r\n.main-form form > h1 {\r\n    color: #fff;\r\n    text-align: center;\r\n}\r\n\r\n.main-form form {\r\n    background-color: #1c1919;\r\n    margin-top: 40px;\r\n    margin-bottom: 35px;\r\n    padding: 15px;\r\n    width: 100%;\r\n    max-width: 650px;\r\n    border-radius: 20px;\r\n    border: solid 2px #fff;\r\n    height: auto;\r\n    overflow-y: hidden;\r\n}\r\n\r\n.main-form form input[type='text'] {\r\n    width: 100%;\r\n    margin-top: 20px;\r\n    background-color: #1c1919;\r\n    border: 1px solid #fff;\r\n    border-radius: 8px;\r\n    color: #fff;\r\n    padding: 4px;\r\n}\r\n\r\n.main-form form input[type='text']::placeholder {\r\n    color: #fff;\r\n}\r\n\r\n.main-form form input[type='text']:focus {\r\n    outline: none;\r\n}\r\n\r\n.main-form form input[type='email'] {\r\n    width: 100%;\r\n    margin-top: 20px;\r\n    background-color: #1c1919;\r\n    border: 1px solid #fff;\r\n    border-radius: 8px;\r\n    color: #fff;\r\n    padding: 4px;\r\n}\r\n\r\n.main-form form input[type='email']::placeholder {\r\n    color: #fff;\r\n}\r\n\r\n.main-form form input[type='email']:focus {\r\n    outline: none;\r\n}\r\n\r\n.btn-form {\r\n    width: 100%;\r\n    margin-top: 30px;\r\n    height: 40px;\r\n    background-color: #ffffff;\r\n    border: 2px solid #ffffff;\r\n    border-radius: 10px;\r\n    color: #1c1919;\r\n    font-size: 1.3rem;\r\n    font-weight: 500;\r\n    transition: all .3s ease-in-out 0s;\r\n}\r\n\r\n.btn-form:hover {\r\n    cursor: pointer;\r\n    background-color: #1c1919;\r\n    color: #fff;\r\n    border: 2px solid #fff;\r\n}\r\n\r\ntextarea {\r\n    width: 100%;\r\n    background-color: #1c1919;\r\n    border: 1px solid #fff;\r\n    resize: vertical;\r\n    min-height: 150px;\r\n    margin-top: 25px;\r\n    border-radius: 8px;\r\n    padding: 4px;\r\n    color:#fff\r\n}\r\n\r\ntextarea::placeholder {\r\n    color: #fff\r\n}\r\n\r\n.arquivo {\r\n    color: #fff;\r\n    margin-top: 25px;\r\n}\r\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -23793,10 +23797,68 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var core_js_stable__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_stable__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _css_style_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./css/style.css */ "./src/css/style.css");
 /* harmony import */ var _css_forms_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./css/forms.css */ "./src/css/forms.css");
+function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
+function _classCallCheck(a, n) { if (!(a instanceof n)) throw new TypeError("Cannot call a class as a function"); }
+function _defineProperties(e, r) { for (var t = 0; t < r.length; t++) { var o = r[t]; o.enumerable = o.enumerable || !1, o.configurable = !0, "value" in o && (o.writable = !0), Object.defineProperty(e, _toPropertyKey(o.key), o); } }
+function _createClass(e, r, t) { return r && _defineProperties(e.prototype, r), t && _defineProperties(e, t), Object.defineProperty(e, "prototype", { writable: !1 }), e; }
+function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : i + ""; }
+function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
 
 
 
 
+var ValidaForms = /*#__PURE__*/function () {
+  function ValidaForms() {
+    _classCallCheck(this, ValidaForms);
+    this.forms = document.querySelector('.forms');
+    this.event();
+  }
+  return _createClass(ValidaForms, [{
+    key: "event",
+    value: function event() {
+      var _this = this;
+      this.forms.addEventListener('submit', function (e) {
+        _this.handleSubmit(e);
+      });
+    }
+  }, {
+    key: "handleSubmit",
+    value: function handleSubmit(event) {
+      event.preventDefault();
+      var campoValido = this.isValid();
+      if (campoValido) {
+        alert('Formulário enviado!');
+        this.forms.submit();
+      }
+    }
+  }, {
+    key: "isValid",
+    value: function isValid() {
+      var _this2 = this;
+      var valid = true;
+      var campos = document.querySelectorAll('.valid');
+      var erro = document.querySelectorAll('.erro-text');
+      erro.forEach(function (e) {
+        e.remove();
+      });
+      campos.forEach(function (campo) {
+        if (!campo.value) {
+          _this2.criaErro(campo, 'Este campo, não pode estar em branco');
+          valid = false;
+        }
+      });
+    }
+  }, {
+    key: "criaErro",
+    value: function criaErro(campo, msg) {
+      var div = document.createElement('div');
+      div.innerHTML = msg;
+      div.classList.add('erro-text');
+      campo.insertAdjacentElement('afterend', div);
+    }
+  }]);
+}();
+var valida = new ValidaForms();
 })();
 
 /******/ })()

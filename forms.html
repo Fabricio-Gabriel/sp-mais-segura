@@ -6,7 +6,7 @@
     <link rel="shortcut icon" href="./public/imgs/favicon-16x16.png" type="image/x-icon">
     <title>São Paulo + segura</title>
 </head>
-<body>
+<body class="body-form">
     <header>
         <nav>
             <img src="./public/imgs/sticker.png" alt="" class="logo"><a href="index.html"></a></img>
@@ -20,16 +20,16 @@
         </nav>
     </header>
     <main class="main-form">
-        <form action="" method="post">
-            <h1>Cadastro</h1>
-            <label for="inome"><input type="text" name="nome" id="inome" placeholder="Nome:"></label>
-            <label for="iwpp"><input type="text" name="wpp" id="iwpp" placeholder="WhatsApp:"></label>
-            <label for="idata"><input type="text" name="data" id="idata" placeholder="Data de nascimento:"></label>
-            <label for="iemail"><input type="email" name="email" id="iemail" placeholder="E-mail:"></label>
-            <label for="iendereco"><input type="text" name="endereco" id="iendereco" placeholder="Endereço:"></label>
-            <label for="ibairro"><input type="text" name="bairro" id="ibairro" placeholder="Bairro:"></label>
-            <label for="icep"><input type="text" name="cep" id="icep" placeholder="CEP:"></label>
-            <textarea name="" id="" placeholder="Escreva sua reclamação:">
+        <form action="" method="post" class="forms">
+            <h1>Mande sua reclamação!</h1>
+            <label for="inome"><input type="text" name="nome" id="inome" placeholder="Nome:" class="valid"></label>
+            <label for="iwpp"><input type="text" name="wpp" id="iwpp" placeholder="WhatsApp:" class="valid"></label>
+            <label for="idata"><input type="text" name="data" id="idata" placeholder="Data de nascimento:" class="valid"></label>
+            <label for="iemail"><input type="email" name="email" id="iemail" placeholder="E-mail:" class="valid"></label>
+            <label for="iendereco"><input type="text" name="endereco" id="iendereco" placeholder="Endereço:" class="valid"></label>
+            <label for="ibairro"><input type="text" name="bairro" id="ibairro" placeholder="Bairro:" class="valid"></label>
+            <label for="icep"><input type="text" name="cep" id="icep" placeholder="CEP:" class="valid"></label>
+            <textarea name="msg" id="i-msg" placeholder="Escreva sua reclamação:" class="valid">
 
             </textarea>
             <input type="file" name="arquivo" id="iarquivo" class="arquivo">
