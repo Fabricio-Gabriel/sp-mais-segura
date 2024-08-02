@@ -14,7 +14,12 @@ html, body {
     height: 100vh;
 }   
 
-
+.body-form {
+    background-image: url('../../public/imgs/teste-bg2.jpg');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 .main-form {
     width: 100vw;
@@ -34,7 +39,7 @@ html, body {
     margin-bottom: 35px;
     padding: 15px;
     width: 100%;
-    max-width: 550px;
+    max-width: 650px;
     border-radius: 20px;
     border: solid 2px #fff;
     height: auto;
@@ -95,6 +100,22 @@ html, body {
     background-color: #1c1919;
     color: #fff;
     border: 2px solid #fff;
+}
+
+textarea {
+    width: 100%;
+    background-color: #1c1919;
+    border: 1px solid #fff;
+    resize: vertical;
+    min-height: 150px;
+    margin-top: 25px;
+    border-radius: 8px;
+    padding: 4px;
+    color:#fff
+}
+
+textarea::placeholder {
+    color: #fff
 }
 
 .arquivo {
