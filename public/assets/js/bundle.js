@@ -51,7 +51,7 @@ html, body {
 
 .main-form {
     width: 100vw;
-    height: 500px;
+    height: auto;
     display: flex;
     justify-content: center;
 }
@@ -64,11 +64,14 @@ html, body {
 .main-form form {
     background-color: #1c1919;
     margin-top: 40px;
+    margin-bottom: 35px;
     padding: 15px;
     width: 100%;
     max-width: 550px;
     border-radius: 20px;
     border: solid 2px #fff;
+    height: auto;
+    overflow-y: hidden;
 }
 
 .main-form form input[type='text'] {
@@ -107,7 +110,31 @@ html, body {
     outline: none;
 }
 
-`, "",{"version":3,"sources":["webpack://./src/css/forms.css"],"names":[],"mappings":"AAEA;IACI,SAAS;IACT,UAAU;IACV,sBAAsB;IACtB,+BAA+B;IAC/B,kBAAkB;AACtB;;;AAGA;IACI,YAAY;IACZ,aAAa;AACjB;;;AAGA;IACI,yDAAwD;IACxD,+BAA+B;IAC/B,4BAA4B;IAC5B,sBAAsB;AAC1B;;AAEA;IACI,YAAY;IACZ,aAAa;IACb,aAAa;IACb,uBAAuB;AAC3B;;AAEA;IACI,WAAW;IACX,kBAAkB;AACtB;;AAEA;IACI,yBAAyB;IACzB,gBAAgB;IAChB,aAAa;IACb,WAAW;IACX,gBAAgB;IAChB,mBAAmB;IACnB,sBAAsB;AAC1B;;AAEA;IACI,WAAW;IACX,gBAAgB;IAChB,yBAAyB;IACzB,sBAAsB;IACtB,kBAAkB;IAClB,WAAW;IACX,YAAY;AAChB;;AAEA;IACI,WAAW;AACf;;AAEA;IACI,aAAa;AACjB;;AAEA;IACI,WAAW;IACX,gBAAgB;IAChB,yBAAyB;IACzB,sBAAsB;IACtB,kBAAkB;IAClB,WAAW;IACX,YAAY;AAChB;;AAEA;IACI,WAAW;AACf;;AAEA;IACI,aAAa;AACjB","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');\r\n\r\n* {\r\n    margin: 0;\r\n    padding: 0;\r\n    box-sizing: border-box;\r\n    font-family: \"Jost\", sans-serif;\r\n    overflow-x: hidden;\r\n}\r\n\r\n\r\nhtml, body {\r\n    width: 100vw;\r\n    height: 100vh;\r\n}   \r\n\r\n\r\n.body-form {\r\n    background-image: url('../../public/imgs/teste-bg2.jpg');\r\n    background-position: top center;\r\n    background-repeat: no-repeat;\r\n    background-size: cover;\r\n}\r\n\r\n.main-form {\r\n    width: 100vw;\r\n    height: 500px;\r\n    display: flex;\r\n    justify-content: center;\r\n}\r\n\r\n.main-form form > h1 {\r\n    color: #fff;\r\n    text-align: center;\r\n}\r\n\r\n.main-form form {\r\n    background-color: #1c1919;\r\n    margin-top: 40px;\r\n    padding: 15px;\r\n    width: 100%;\r\n    max-width: 550px;\r\n    border-radius: 20px;\r\n    border: solid 2px #fff;\r\n}\r\n\r\n.main-form form input[type='text'] {\r\n    width: 100%;\r\n    margin-top: 20px;\r\n    background-color: #1c1919;\r\n    border: 1px solid #fff;\r\n    border-radius: 8px;\r\n    color: #fff;\r\n    padding: 4px;\r\n}\r\n\r\n.main-form form input[type='text']::placeholder {\r\n    color: #fff;\r\n}\r\n\r\n.main-form form input[type='text']:focus {\r\n    outline: none;\r\n}\r\n\r\n.main-form form input[type='email'] {\r\n    width: 100%;\r\n    margin-top: 20px;\r\n    background-color: #1c1919;\r\n    border: 1px solid #fff;\r\n    border-radius: 8px;\r\n    color: #fff;\r\n    padding: 4px;\r\n}\r\n\r\n.main-form form input[type='email']::placeholder {\r\n    color: #fff;\r\n}\r\n\r\n.main-form form input[type='email']:focus {\r\n    outline: none;\r\n}\r\n\r\n"],"sourceRoot":""}]);
+.btn-form {
+    width: 100%;
+    margin-top: 30px;
+    height: 40px;
+    background-color: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    color: #1c1919;
+    font-size: 1.3rem;
+    font-weight: 500;
+    transition: all .3s ease-in-out 0s;
+}
+
+.btn-form:hover {
+    cursor: pointer;
+    background-color: #1c1919;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.arquivo {
+    color: #fff;
+    margin-top: 25px;
+}
+`, "",{"version":3,"sources":["webpack://./src/css/forms.css"],"names":[],"mappings":"AAEA;IACI,SAAS;IACT,UAAU;IACV,sBAAsB;IACtB,+BAA+B;IAC/B,kBAAkB;AACtB;;;AAGA;IACI,YAAY;IACZ,aAAa;AACjB;;;AAGA;IACI,yDAAwD;IACxD,+BAA+B;IAC/B,4BAA4B;IAC5B,sBAAsB;AAC1B;;AAEA;IACI,YAAY;IACZ,YAAY;IACZ,aAAa;IACb,uBAAuB;AAC3B;;AAEA;IACI,WAAW;IACX,kBAAkB;AACtB;;AAEA;IACI,yBAAyB;IACzB,gBAAgB;IAChB,mBAAmB;IACnB,aAAa;IACb,WAAW;IACX,gBAAgB;IAChB,mBAAmB;IACnB,sBAAsB;IACtB,YAAY;IACZ,kBAAkB;AACtB;;AAEA;IACI,WAAW;IACX,gBAAgB;IAChB,yBAAyB;IACzB,sBAAsB;IACtB,kBAAkB;IAClB,WAAW;IACX,YAAY;AAChB;;AAEA;IACI,WAAW;AACf;;AAEA;IACI,aAAa;AACjB;;AAEA;IACI,WAAW;IACX,gBAAgB;IAChB,yBAAyB;IACzB,sBAAsB;IACtB,kBAAkB;IAClB,WAAW;IACX,YAAY;AAChB;;AAEA;IACI,WAAW;AACf;;AAEA;IACI,aAAa;AACjB;;AAEA;IACI,WAAW;IACX,gBAAgB;IAChB,YAAY;IACZ,yBAAyB;IACzB,yBAAyB;IACzB,mBAAmB;IACnB,cAAc;IACd,iBAAiB;IACjB,gBAAgB;IAChB,kCAAkC;AACtC;;AAEA;IACI,eAAe;IACf,yBAAyB;IACzB,WAAW;IACX,sBAAsB;AAC1B;;AAEA;IACI,WAAW;IACX,gBAAgB;AACpB","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');\r\n\r\n* {\r\n    margin: 0;\r\n    padding: 0;\r\n    box-sizing: border-box;\r\n    font-family: \"Jost\", sans-serif;\r\n    overflow-x: hidden;\r\n}\r\n\r\n\r\nhtml, body {\r\n    width: 100vw;\r\n    height: 100vh;\r\n}   \r\n\r\n\r\n.body-form {\r\n    background-image: url('../../public/imgs/teste-bg2.jpg');\r\n    background-position: top center;\r\n    background-repeat: no-repeat;\r\n    background-size: cover;\r\n}\r\n\r\n.main-form {\r\n    width: 100vw;\r\n    height: auto;\r\n    display: flex;\r\n    justify-content: center;\r\n}\r\n\r\n.main-form form > h1 {\r\n    color: #fff;\r\n    text-align: center;\r\n}\r\n\r\n.main-form form {\r\n    background-color: #1c1919;\r\n    margin-top: 40px;\r\n    margin-bottom: 35px;\r\n    padding: 15px;\r\n    width: 100%;\r\n    max-width: 550px;\r\n    border-radius: 20px;\r\n    border: solid 2px #fff;\r\n    height: auto;\r\n    overflow-y: hidden;\r\n}\r\n\r\n.main-form form input[type='text'] {\r\n    width: 100%;\r\n    margin-top: 20px;\r\n    background-color: #1c1919;\r\n    border: 1px solid #fff;\r\n    border-radius: 8px;\r\n    color: #fff;\r\n    padding: 4px;\r\n}\r\n\r\n.main-form form input[type='text']::placeholder {\r\n    color: #fff;\r\n}\r\n\r\n.main-form form input[type='text']:focus {\r\n    outline: none;\r\n}\r\n\r\n.main-form form input[type='email'] {\r\n    width: 100%;\r\n    margin-top: 20px;\r\n    background-color: #1c1919;\r\n    border: 1px solid #fff;\r\n    border-radius: 8px;\r\n    color: #fff;\r\n    padding: 4px;\r\n}\r\n\r\n.main-form form input[type='email']::placeholder {\r\n    color: #fff;\r\n}\r\n\r\n.main-form form input[type='email']:focus {\r\n    outline: none;\r\n}\r\n\r\n.btn-form {\r\n    width: 100%;\r\n    margin-top: 30px;\r\n    height: 40px;\r\n    background-color: #ffffff;\r\n    border: 2px solid #ffffff;\r\n    border-radius: 10px;\r\n    color: #1c1919;\r\n    font-size: 1.3rem;\r\n    font-weight: 500;\r\n    transition: all .3s ease-in-out 0s;\r\n}\r\n\r\n.btn-form:hover {\r\n    cursor: pointer;\r\n    background-color: #1c1919;\r\n    color: #fff;\r\n    border: 2px solid #fff;\r\n}\r\n\r\n.arquivo {\r\n    color: #fff;\r\n    margin-top: 25px;\r\n}\r\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 

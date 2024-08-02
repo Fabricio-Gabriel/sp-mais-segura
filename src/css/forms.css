@@ -24,7 +24,7 @@ html, body {
 
 .main-form {
     width: 100vw;
-    height: 500px;
+    height: auto;
     display: flex;
     justify-content: center;
 }
@@ -37,11 +37,14 @@ html, body {
 .main-form form {
     background-color: #1c1919;
     margin-top: 40px;
+    margin-bottom: 35px;
     padding: 15px;
     width: 100%;
     max-width: 550px;
     border-radius: 20px;
     border: solid 2px #fff;
+    height: auto;
+    overflow-y: hidden;
 }
 
 .main-form form input[type='text'] {
@@ -80,3 +83,27 @@ html, body {
     outline: none;
 }
 
+.btn-form {
+    width: 100%;
+    margin-top: 30px;
+    height: 40px;
+    background-color: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    color: #1c1919;
+    font-size: 1.3rem;
+    font-weight: 500;
+    transition: all .3s ease-in-out 0s;
+}
+
+.btn-form:hover {
+    cursor: pointer;
+    background-color: #1c1919;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.arquivo {
+    color: #fff;
+    margin-top: 25px;
+}
