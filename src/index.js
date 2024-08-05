@@ -12,6 +12,8 @@ class ValidaForms {
     }
 
     event() {
+        const text = document.querySelector('.text-area')
+        text.innerHTML = '';
         this.forms.addEventListener('submit', (e) => {
             this.handleSubmit(e);
         });
@@ -36,13 +38,41 @@ class ValidaForms {
             e.remove();
         });
 
-        campos.forEach(campo => {
-            if (!campo.value) {
-                this.criaErro(campo, 'Este campo, não pode estar em branco');
-                valid = false;
-            }
+        if (!campos[0].value) {
+            this.criaErro(campos[0], `O campo "Nome" não pode estar em branco!`);
+            valid = false;
+        }
 
-        });
+        if (!campos[1].value) {
+            this.criaErro(campos[1], `O campo "WhatsApp" não pode estar em branco!`);
+            valid = false;
+        }
+
+        if (!campos[2].value) {
+            this.criaErro(campos[2], `O campo "Data de nascimento" não pode estar em branco!`);
+            valid = false;
+        }
+
+        if (!campos[3].value) {
+            this.criaErro(campos[3], `O campo "E-mail" não pode estar em branco!`);
+            valid = false;
+        }
+
+        if (!campos[4].value) {
+            this.criaErro(campos[4], `O campo "Endereço" não pode estar em branco!`);
+            valid = false;
+        }
+
+        if (!campos[5].value) {
+            this.criaErro(campos[5], `O campo "Bairro" não pode estar em branco!`);
+            valid = false;
+        }
+
+        if (!campos[6].value) {
+            this.criaErro(campos[6], `O campo "CEP" não pode estar em branco!`);
+            valid = false;
+        }
+
     }
 
     criaErro(campo, msg) {

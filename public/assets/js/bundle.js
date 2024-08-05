@@ -23817,6 +23817,8 @@ var ValidaForms = /*#__PURE__*/function () {
     key: "event",
     value: function event() {
       var _this = this;
+      var text = document.querySelector('.text-area');
+      text.innerHTML = '';
       this.forms.addEventListener('submit', function (e) {
         _this.handleSubmit(e);
       });
@@ -23834,19 +23836,40 @@ var ValidaForms = /*#__PURE__*/function () {
   }, {
     key: "isValid",
     value: function isValid() {
-      var _this2 = this;
       var valid = true;
       var campos = document.querySelectorAll('.valid');
       var erro = document.querySelectorAll('.erro-text');
       erro.forEach(function (e) {
         e.remove();
       });
-      campos.forEach(function (campo) {
-        if (!campo.value) {
-          _this2.criaErro(campo, 'Este campo, não pode estar em branco');
-          valid = false;
-        }
-      });
+      if (!campos[0].value) {
+        this.criaErro(campos[0], "O campo \"Nome\" n\xE3o pode estar em branco!");
+        valid = false;
+      }
+      if (!campos[1].value) {
+        this.criaErro(campos[1], "O campo \"WhatsApp\" n\xE3o pode estar em branco!");
+        valid = false;
+      }
+      if (!campos[2].value) {
+        this.criaErro(campos[2], "O campo \"Data de nascimento\" n\xE3o pode estar em branco!");
+        valid = false;
+      }
+      if (!campos[3].value) {
+        this.criaErro(campos[3], "O campo \"E-mail\" n\xE3o pode estar em branco!");
+        valid = false;
+      }
+      if (!campos[4].value) {
+        this.criaErro(campos[4], "O campo \"Endere\xE7o\" n\xE3o pode estar em branco!");
+        valid = false;
+      }
+      if (!campos[5].value) {
+        this.criaErro(campos[5], "O campo \"Bairro\" n\xE3o pode estar em branco!");
+        valid = false;
+      }
+      if (!campos[6].value) {
+        this.criaErro(campos[6], "O campo \"CEP\" n\xE3o pode estar em branco!");
+        valid = false;
+      }
     }
   }, {
     key: "criaErro",
